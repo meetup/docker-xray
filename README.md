@@ -1,4 +1,4 @@
-# Docker XRay
+# Docker XRay [![Build Status](https://travis-ci.org/meetup/docker-xray.svg?branch=master)](https://travis-ci.org/meetup/docker-xray)
 
 > AWS [XRay](https://aws.amazon.com/xray/) [daemon](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon.html) in a docker container
 
