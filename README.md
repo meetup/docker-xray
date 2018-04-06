@@ -31,3 +31,5 @@ $ docker run \
       -p 2000:2000/udp \
       meetup/xray:{TAG_HERE}
 ```
+
+Find the latest docker tag [here](https://hub.docker.com/r/meetup/xray/tags/)
