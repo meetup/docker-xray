@@ -18,3 +18,16 @@ This repository wraps that daemon in a docker container as recommended by [these
 
 See the xray [pricing](https://aws.amazon.com/xray/pricing/) guide to understand
 the cost impact of using this service
+
+You can run this locally with the following command
+
+```bash
+$ docker run \
+      --attach STDOUT \
+      -v ~/.aws/:/root/.aws/:ro \
+      --net=host \
+      -e AWS_REGION=us-east-2 \
+      --name xray-daemon \
+      -p 2000:2000/udp \
+      meetup/xray:{TAG_HERE}
+```
