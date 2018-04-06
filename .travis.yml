@@ -16,4 +16,10 @@ before_install:
   - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
 
 script:
-  - echo "test"
+  - echo "👍"
+
+deploy:
+  provider: script
+  script: make deploy
+  on:
+    branch: master
