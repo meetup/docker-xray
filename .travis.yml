@@ -1,0 +1,16 @@
+sudo: required
+language: bash
+
+services:
+  - docker
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - CI_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
+
+before_install:
+  - docker login --username $DOCKER_USER --password $DOCKER_PASS
