@@ -14,3 +14,6 @@ env:
 
 before_install:
   - docker login --username $DOCKER_USER --password $DOCKER_PASS
+
+script:
+  - echo "test"
